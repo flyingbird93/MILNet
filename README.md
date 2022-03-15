@@ -52,7 +52,7 @@ We extract the AVA dataset to MLSP, and feature reduce to 6144 for training. all
 
 
 ## Training and test
-Traning scripts for two datasets can be found in MILNet.py. The dataroot argument should be modified to path_to_<dataset_name>. Run the follwing command for training:
+Traning scripts for two datasets can be found in ==MILNet.py==. The dataroot argument should be modified to path_to_<dataset_name>. Run the follwing command for training:
 ```python
 # Training and test on AVA_19998
 python MILNet.py
@@ -61,9 +61,11 @@ python MILNet.py
 
 
 ## Citation
+```
 @inproceedings{shi2022multiple,
   title={Multiple image joint learning for image aesthetic assessment},
   author={Tengfei Shi, Zhenyu Wu, Chenglizhao Chen, Chong Peng, Aiming Hao},
   booktitle={TMM},
   year={2022}
 }
+```
