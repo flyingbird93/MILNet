@@ -34,56 +34,36 @@ pip install -r requirements.txt
 
 
 ## Dataset
-- AVA dataset(19928)
-  - Download the original AVA dataset and dataset split into path_to_AVAdataset_19928/. The directory structure should be like:
+- AVA dataset(19998)
+  - Download the original AVA dataset and image featre split into data/. The directory structure should be like:
 	```
-	path_to_AVAdataset_19928
-		19928_aesthetic_image_list
-		AVA_19928.txt
-		train_19928.txt
-		test_19998.txt
+	data
+		feature_16928_dataloader.py
+		gcn_dataloader_6144.py
+		ILG_train.txt
+		ILG_test.txt
 	```
 
-- AVA dataset(19998)
-   - Download the dataset split into path_to_AVAdataset_19998/. The directory structure should be like:
-		```
-		path_to_AVAdataset_19998
-			19998_aesthetic_image_list
-			AVA_19998.txt
-			train_19998.txt
-			test_19998.txt
-		```
+- AVA dataset(19928)
+  - the same as AVA dataset(19998)
 - Extract feature
 We extract the AVA dataset to MLSP, and feature reduce to 6144 for training. all the files can be download on [here](https://pan.baidu.com/s/1j02Of7k5_6rQQMqOaI6I3g),code is #ddkd#.
 
 
 
-## Training
-Traning scripts for two datasets can be found in main/. The dataroot argument should be modified to path_to_<dataset_name>. Run the follwing command for training:
+## Training and test
+Traning scripts for two datasets can be found in MILNet.py. The dataroot argument should be modified to path_to_<dataset_name>. Run the follwing command for training:
 ```python
-# Training on AVA_19998
-python main/train_AVA_19928.py
-
-# Training on AVA_19928
-python main/train_AVA_19998.py
+# Training and test on AVA_19998
+python MILNet.py
 ```
 
-
-
-## Testing
-The [pre-trained model]() that predict distribution directly from images
-Testing model by runing the scripts or the follwing command:
-```python
-python -m test_AVA_19928.py \
-    --dataset <dataset_name> \
-    --dataroot path_to_<dataset_name> \
-    --eval_model path_to_model
-    
-python -m test_AVA_19998.py \
-    --dataset <dataset_name> \
-    --dataroot path_to_<dataset_name> \
-    --eval_model path_to_model
-```
 
 
 ## Citation
+@inproceedings{shi2022multiple,
+  title={Multiple image joint learning for image aesthetic assessment},
+  author={Tengfei Shi, Zhenyu Wu, Chenglizhao Chen, Chong Peng, Aiming Hao},
+  booktitle={TMM},
+  year={2022}
+}
