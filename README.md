@@ -1,5 +1,4 @@
-# MILNet
-Multiple image joint learning for image aesthetic assessment
+# Multiple image joint learning for image aesthetic assessment（MILNet）
 
 This repository contains a pytorch implementation of the paper "Multiple Images Joint Learning for Image Aesthetic Assessment"(Subject to TMM)
 
