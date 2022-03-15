@@ -54,7 +54,7 @@ pip install -r requirements.txt
 			test_19998.txt
 		```
 - Extract feature
-We extract the AVA dataset to MLSP, and [feature]() reduction for training. 
+We extract the AVA dataset to MLSP, and feature reduce to 6144 for training. all the files can be download on [here](https://pan.baidu.com/s/1j02Of7k5_6rQQMqOaI6I3g),code is #ddkd#.
 
 
 
