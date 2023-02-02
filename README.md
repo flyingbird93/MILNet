@@ -65,7 +65,7 @@ python MILNet.py
 @inproceedings{shi2022multiple,
   title={Multiple image joint learning for image aesthetic assessment},
   author={Tengfei Shi, Zhenyu Wu, Chenglizhao Chen, Chong Peng, Aiming Hao},
-  booktitle={TMM},
+  booktitle={TCSVT},
   year={2022}
 }
 ```
