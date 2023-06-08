@@ -1,6 +1,6 @@
 # Multiple image joint learning for image aesthetic assessment（MILNet）
 
-This repository contains a pytorch implementation of the paper "Multiple Images Joint Learning for Image Aesthetic Assessment"(Subject to TCSVT)
+This repository contains a pytorch implementation of the paper "Multiple Images Joint Learning for Image Aesthetic Assessment"(Subject to ToMM)
 
 We proposed MILNet employ multiple images for aesthetic assessment. First, we adopt semantic information retrieval reference; Then, we use Graph Convolution Network(GCN) to reason the relation of different nodes; Finally, we utilize the improved loss function AdaEMD to stabilize training process.
 
@@ -64,8 +64,8 @@ python MILNet.py
 ```
 @inproceedings{shi2022multiple,
   title={Multiple image joint learning for image aesthetic assessment},
-  author={Tengfei Shi, Zhenyu Wu, Chenglizhao Chen, Chong Peng, Aiming Hao},
-  booktitle={TCSVT},
-  year={2022}
+  author={Tengfei Shi, Zhenyu Wu, Chenglizhao Chen, Aiming Hao, Yuming Fang},
+  booktitle={ToMM},
+  year={2023}
 }
 ```
